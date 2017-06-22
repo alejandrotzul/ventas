@@ -1,0 +1,43 @@
+<div {$pageattrs}>
+
+{BEGIN container_column}
+<div class="rnr-c rnr-ch rnr-c-column">
+
+{BEGIN masterlist_title}
+<div  class="style1 rnr-bl rnr-b-masterprintheader {$brickclass_masterprintheader}"><span>{$pagetitlelabel facturas masterprint}</span></div>
+{END masterlist_title}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_column}
+
+
+
+{BEGIN container_mastergrid}
+
+
+
+<table {$bsmasterprintgrid_hiddenattr} data-pageid="{$pageid}" data-brick="bsmasterprintgrid" class="table rnr-b-mastergridfields rnr-gridtable" >
+		<thead>
+		<tr>
+			<th class="{$fecha_class}">{$label facturas fecha}</th>
+			<th class="{$cantidad_class}">{$label facturas cantidad}</th>
+			<th class="{$precio_class}">{$label facturas precio}</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="{$fecha_class}">{$fecha_mastervalue}</td>
+			<td class="{$cantidad_class}">{$cantidad_mastervalue}</td>
+			<td class="{$precio_class}">{$precio_mastervalue}</td>
+		</tr>
+	</tbody>
+
+</table> 
+
+
+
+
+{END container_mastergrid}
+
+</div>

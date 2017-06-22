@@ -1,0 +1,207 @@
+<!doctype html><p align=center><font size=+1 color=red>This website was created by evaluation version of PHPRunner Trial.</font></p>
+<p align=center><font size=+1 color=red>This warning message will not appear on website created by a paid-for version of PHPRunner Trial.</font></p>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_searchpage}
+<div {$searchpage_chiddenattr} data-pageid="{$pageid}" data-container="searchpage" class="container    "> 
+
+
+
+
+{BEGIN container_header}
+<div {$header_chiddenattr} data-pageid="{$pageid}" data-container="header" class="   col-md-6 col-md-offset-3"> 
+
+{BEGIN searchheader}
+	<h2 {$bssearchheader_hiddenattr} data-pageid="{$pageid}" data-brick="bssearchheader" >{$pagetitlelabel ventas search}</h2>
+
+{END searchheader}
+
+
+
+</div>
+{END container_header}
+
+
+
+
+
+
+</div>
+{END container_searchpage}
+
+
+
+{BEGIN container_fields}
+<div {$fields_chiddenattr} data-pageid="{$pageid}" data-container="fields" class="   col-md-12 "> 
+
+
+<div {$bssearchfields_hiddenattr} data-pageid="{$pageid}" data-brick="bssearchfields" class="form-horizontal" role="form">
+<div class="container">
+	<div class="form-group">
+		<div class="col-md-12" >
+			&nbsp;
+		</div>
+	</div>
+</div>
+	{BEGIN idventas_fieldblock}		
+	<div class="container {$fielddispclass_idventas}" data-fieldname="idventas">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label ventas idventas}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_idventas}
+			</div>
+			<div class="col-md-4" >
+				{$idventas_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$idventas_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END idventas_fieldblock}
+	{BEGIN producto_fieldblock}		
+	<div class="container {$fielddispclass_producto}" data-fieldname="producto">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label ventas producto}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_producto}
+			</div>
+			<div class="col-md-4" >
+				{$producto_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$producto_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END producto_fieldblock}
+	{BEGIN cantidad_fieldblock}		
+	<div class="container {$fielddispclass_cantidad}" data-fieldname="cantidad">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label ventas cantidad}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_cantidad}
+			</div>
+			<div class="col-md-4" >
+				{$cantidad_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$cantidad_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END cantidad_fieldblock}
+	{BEGIN fechaVenta_fieldblock}		
+	<div class="container {$fielddispclass_fechaVenta}" data-fieldname="fechaVenta">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label ventas fechaVenta}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_fechaVenta}
+			</div>
+			<div class="col-md-4" >
+				{$fechaVenta_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$fechaVenta_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END fechaVenta_fieldblock}
+</div>
+
+
+
+
+</div>
+{END container_fields}
+
+
+
+{BEGIN container_bottombuttons}
+<div {$bottombuttons_chiddenattr} data-pageid="{$pageid}" data-container="bottombuttons" class="container    "> 
+
+
+
+
+{BEGIN container_leftbuttons}
+<div {$leftbuttons_chiddenattr} data-pageid="{$pageid}" data-container="leftbuttons" class="   col-md-3 col-md-offset-4"> 
+
+{BEGIN searchbuttons}
+{BEGIN search_button}
+<button class="btn btn-primary" {$searchbutton_attrs}>Buscar</button>
+{END search_button} 
+{BEGIN reset_button}
+<button class="btn btn-default" {$resetbutton_attrs}>Reiniciar</button>
+{END reset_button}
+{BEGIN back_button}
+<button class="btn btn-default" {$backbutton_attrs}>Volver a la lista</button>
+{END back_button}
+{END searchbuttons}
+
+
+
+</div>
+{END container_leftbuttons}
+
+
+
+
+
+
+</div>
+{END container_bottombuttons}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>
